@@ -34,7 +34,7 @@ href="http://nchoosetwo.com">nChooseTwo.com</a></p>
 </section>
 <section class="column grid_6">
 <div class="stylized myform">
-<form action="/invite/" method="post" id="invite_form">
+<form action="invite.php" method="post" id="invite_form">
 <h1>Request an invitation</h1>
 <p>nChooseThree is currently limited to the <strong>MIT</strong> community.</p>
 <div class="form-element">
@@ -45,7 +45,7 @@ href="http://nchoosetwo.com">nChooseTwo.com</a></p>
 </form>
 </div>
 <div class="stylized myform">
-<form action="/login/" method="post" id="login_form">
+<form action="login.php" method="post" id="login_form">
 <h1>Login</h1>
 <p>Welcome back! (<a href="/resetpass/">Forgot your password?</a>)</p>
 <div class="form-element">
