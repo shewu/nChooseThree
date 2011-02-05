@@ -46,7 +46,6 @@ header,nav,footer {
 
 nav {
 	text-align: right;
-	font-size: smaller;
 	font-weight: lighter;
 }
 
