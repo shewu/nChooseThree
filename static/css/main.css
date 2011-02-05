@@ -37,7 +37,7 @@ p {
 	margin: 0 0 1.5em;
 }
 
-header,nav,footer {
+header,nav,footer,article,section {
 	display: block;
 }
 
