@@ -58,7 +58,7 @@ nav a:hover {
 header {
 	border-bottom: 2px dotted #CCC;
 	margin-bottom: 24px;
-	background: url('static/img/logo.png') no-repeat;
+	background: url('../img/logo.png') no-repeat;
 	padding: 5px 0 8px 32px;
 	text-shadow: #999 0px 1px 1px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -155,7 +155,7 @@ footer {
 
 .html5logo {
 	margin: 24px auto;
-	background: url('static/img/5.png') no-repeat;
+	background: url('../img/5.png') no-repeat;
 	height: 64px;
 	width: 165px;
 }
