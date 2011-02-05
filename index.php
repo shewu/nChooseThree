@@ -6,6 +6,8 @@
 /* make all the html5 elements display block */
 html {
 	color: #343434;
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
@@ -46,7 +48,6 @@ header,nav,footer {
 
 nav {
 	text-align: right;
-	font-size: smaller;
 	font-weight: lighter;
 }
 
@@ -63,7 +64,7 @@ header {
 	border-bottom: 2px dotted #CCC;
 	margin-bottom: 24px;
 	background: url('static/img/logo.png') no-repeat;
-	padding: 5px 0 0 32px;
+	padding: 5px 0 8px 32px;
 	text-shadow: #999 0px 1px 1px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2em;
@@ -77,6 +78,84 @@ footer {
 	border-top: 2px dotted #CCC;
 	text-align: center;
 	font-weight: lighter;
+}
+
+.column {
+	float: left;
+	margin: 0px 10px;
+	overflow: hidden;
+}
+
+.grid_6 {
+	width: 460px;
+}
+
+.error, .notice, .success {
+	border: 1px solid #DDD;
+	margin-bottom: 1em;
+	padding: 0.4em 0.8em;
+}
+
+.notice {
+	background: #FFF6BF;
+	border-color: #FFD324;
+	color: #514721;
+}
+
+.stylized {
+	background: #EBF4FB;
+	border: 2px solid #B7DDF2;
+}
+
+.stylized h1 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.stylized form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.stylized p {
+	border-bottom: 1px solid #B7DDF2;
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+.stylized input {
+	border: 1px solid #AACFE4;
+	float: left;
+	font-size: 12px;
+	margin: 2 0 20 10;
+	padding: 4 2;
+	width: 200;
+}
+
+.stylized label {
+	display: block;
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	width: 140px;
+}
+
+.stylized button {
+	margin-left: 150px;
+}
+
+.myform {
+	margin: 0px auto 24px;
+	padding: 14px;
+	width: 400px;
+}
+
+#twocolumnfooter {
+	clear: both;
 }
 
 .html5logo {
@@ -96,7 +175,7 @@ href="/">Home</a>
 	<a href="/">nChooseThree</a>
 </header>
 <article>
-<section class="column">
+<section class="column grid_6">
 <div class="blurb">
 <h3>Know three friends who should go on a date?</h3>
 <h3>Which of your friends would make a cute triple?</h3>
@@ -107,9 +186,14 @@ matchmaker learn of any other response.</strong> The matchmaker's identity is
 revealed when all three A, B, and C accept the match.</p>
 <p><a href="#">Read more about nChooseThree</a></p>
 </div>
+<div class="notice">
+<h3>Alert</h3>
+<p>This is not a sarcastic rendition of our sister site, <a
+href="http://nchoosetwo.com">nChooseTwo.com</a></p>
+</div>
 </section>
-<section class="column">
-<div class="stylized">
+<section class="column grid_6">
+<div class="stylized myform">
 <form action="/invite/" method="post" id="invite_form">
 <h1>Request an invitation</h1>
 <p>nChooseThree is currently limited to the <strong>MIT</strong> community.</p>
@@ -120,7 +204,7 @@ revealed when all three A, B, and C accept the match.</p>
 <button type="submit">Request</button>
 </form>
 </div>
-<div class="stylized">
+<div class="stylized myform">
 <form action="/login/" method="post" id="login_form">
 <h1>Login</h1>
 <p>Welcome back! (<a href="/resetpass/">Forgot your password?</a>)</p>
@@ -136,6 +220,7 @@ revealed when all three A, B, and C accept the match.</p>
 </form>
 </div>
 </section>
+<div id="twocolumnfooter"></div>
 </article>
 <footer>
 	<div class="html5logo"></div>
