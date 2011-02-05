@@ -106,6 +106,11 @@ matchmaker learn of any other response.</strong> The matchmaker's identity is
 revealed when all three A, B, and C accept the match.</p>
 <p><a href="#">Read more about nChooseThree</a></p>
 </div>
+<div class="notice">
+<h3>Alert</h3>
+<p>This is not a sarcastic rendition of our sister site, <a
+href="http://nchoosetwo.com">nChooseTwo.com</a></p>
+</div>
 </section>
 <section class="column">
 <div class="stylized">
