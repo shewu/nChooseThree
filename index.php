@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>nChooseThree</title>
-<style type="text/css">
-@import 'static/css/main.css';
-</style>
-</head>
-<body>
-<nav>
-	<a href="/about">About</a> | <a href="/about#feedback">Feedback</a> | <a
-href="/">Home</a>
-</nav>
-<header>
-	<a href="/">nChooseThree</a>
-</header>
+<?php
+include("header.php");
+?>
 <article>
 <section class="column grid_6">
 <div class="blurb">
@@ -24,7 +11,7 @@ by your friends!</p>
 <p><strong>If not all three matchees accept, none of the matchees or the
 matchmaker learn of any other response.</strong> The matchmaker's identity is
 revealed when all three A, B, and C accept the match.</p>
-<p><a href="#">Read more about nChooseThree</a></p>
+<p><a href="about.php">Read more about nChooseThree</a></p>
 </div>
 <div class="notice">
 <h3>Alert</h3>
@@ -62,11 +49,6 @@ href="http://nchoosetwo.com">nChooseTwo.com</a></p>
 </section>
 <div id="twocolumnfooter"></div>
 </article>
-<footer>
-	<div class="html5logo"></div>
-	Logo created with <a href="http://www.latex-project.org/"><img alt="\Latex"
-	src="static/img/latex.png" width="38" height="16" style="vertical-align: middle" /></a>
-</footer>
-</body>
-</html>
-
+<?php
+include("footer.php");
+?>

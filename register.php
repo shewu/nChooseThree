@@ -11,5 +11,6 @@ if(mysql_num_rows($res) != 0) {
 <?php
 } else {
 	header("Location: index.php");
+	die();
 }
 ?>

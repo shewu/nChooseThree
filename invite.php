@@ -1,6 +1,7 @@
 <?php
 require("web_vars.php");
 require("mysql_connect.php");
+require_once("verify_email.php");
 $invite_text_format = "Hey %s,
 
 Thanks for signing up for nChooseThree, an MIT-exclusive service that lets you match up your friends, and check out matches your friends have suggested for you! To activate your account, please visit
@@ -35,7 +36,18 @@ function invite($mail) {
 	mysql_query($query);
 }
 
-if(isset($_POST["email"])) {
+if(isset($_POST["email"]) and is_email_valid($_POST["email"])) {
 	invite($_POST["email"]);
+
+include("header.php");
+?>
+<article>
+An email has been sent to your address. Please click the link in the email to complete registration.
+</article>
+<?php
+include("footer.php");
+} else {
+	header("Location: index.php");
+	die();
 }
 ?>
