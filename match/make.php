@@ -1,4 +1,6 @@
 <?php
+require("../auth.php");
+if($auth_name) {
 include("../header.php");
 ?>
 <article>
@@ -22,4 +24,7 @@ ui-autocomplete-input" />
 
 <?php
 include("../footer.php");
+} else {
+	header("Location: ../index.php");
+}
 ?>
