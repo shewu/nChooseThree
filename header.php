@@ -3,8 +3,8 @@
 <head>
 <title>nChooseThree</title>
 <style type="text/css">
-@import 'static/css/main.css';
 @import 'static/css/reset.css';
+@import 'static/css/main.css';
 </style>
 </head>
 <body>
