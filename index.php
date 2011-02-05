@@ -63,7 +63,7 @@ header {
 	border-bottom: 2px dotted #CCC;
 	margin-bottom: 24px;
 	background: url('static/img/logo.png') no-repeat;
-	padding: 8px 0 0 32px;
+	padding: 5px 0 0 32px;
 	text-shadow: #999 0px 1px 1px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2em;
