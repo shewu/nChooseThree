@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>nChooseThree</title>
-<style type="text/css">
-@import '../static/css/main.css';
-</style>
-</head>
-<body>
-<!-- begin nav and header -->
-<nav>
-	<a href="/about">About</a> | <a href="/about#feedback">Feedback</a> | <a
-href="/">Home</a>
-</nav>
-<header>
-	<a href="/">nChooseThree</a>
-</header>
-<!-- end nav and header -->
-
+<?php
+include("../header.php");
+?>
 <article>
 <aside>
 </aside>
@@ -40,13 +24,6 @@ ui-autocomplete-input" />
 </section>
 </article>
 
-<!-- begin footer -->
-<footer>
-	<div class="html5logo"></div>
-	Logo created with <a href="http://www.latex-project.org/"><img alt="\Latex"
-	src="static/img/latex.png" width="38" height="16" style="vertical-align: middle" /></a>
-</footer>
-<!-- end footer -->
-</body>
-</html>
-
+<?php
+include("../footer.php");
+?>
