@@ -69,10 +69,6 @@ p {
 	margin: 0 0 1.5em;
 }
 
-header,nav,footer,article,section {
-	display: block;
-}
-
 nav {
 	text-align: right;
 	font-weight: lighter;

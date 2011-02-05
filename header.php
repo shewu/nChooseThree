@@ -4,6 +4,7 @@
 <title>nChooseThree</title>
 <style type="text/css">
 @import 'static/css/main.css';
+@import 'static/css/reset.css';
 </style>
 </head>
 <body>
