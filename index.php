@@ -113,12 +113,39 @@ footer {
 	margin-bottom: 8px;
 }
 
+.stylized form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
 .stylized p {
 	border-bottom: 1px solid #B7DDF2;
 	color: #666;
 	font-size: 12px;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
+}
+
+.stylized input {
+	border: 1px solid #AACFE4;
+	float: left;
+	font-size: 12px;
+	margin: 2 0 20 10;
+	padding: 4 2;
+	width: 200;
+}
+
+.stylized label {
+	display: block;
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	width: 140px;
+}
+
+.stylized button {
+	margin-left: 150px;
 }
 
 .myform {
