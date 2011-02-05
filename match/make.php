@@ -5,10 +5,6 @@ include("../header.php");
 <aside>
 </aside>
 <section class="grid_9">
-<div class="notice">
-<strong>Here's a tip:</strong> Type part or all of someone's name to get
-autocomplete suggestions.
-</div>
 <div class="matchmaker">
 <form method="post" class="matchmake-form">
 <label>Make a match</label>
