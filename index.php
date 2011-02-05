@@ -109,6 +109,32 @@ revealed when all three A, B, and C accept the match.</p>
 </div>
 </section>
 <section class="column">
+<div class="stylized">
+<form action="/invite/" method="post" id="invite_form">
+<h1>Request an invitation</h1>
+<p>nChooseThree is currently limited to the <strong>MIT</strong> community.</p>
+<div class="form-element">
+<label for="email">Email</label>
+<input type="text" id="email" name="email" class="text" />
+</div>
+<button type="submit">Request</button>
+</form>
+</div>
+<div class="stylized">
+<form action="/login/" method="post" id="login_form">
+<h1>Login</h1>
+<p>Welcome back! (<a href="/resetpass/">Forgot your password?</a>)</p>
+<div class="form-element">
+<label for="email">Email</label>
+<input type="text" id="email" name="email" class="text" />
+</div>
+<div class="form-element">
+<label for="password">Password</label>
+<input type="password" id="password" name="password" class="text" />
+</div>
+<button type="submit">Login</button>
+</form>
+</div>
 </section>
 </article>
 <footer>
