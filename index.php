@@ -98,8 +98,8 @@ href="/">Home</a>
 <article>
 <section class="column">
 <div class="blurb">
-<h3>Know <strike>two</strike> three friends who should go on a date?</h3>
-<h3>Which of your friends would make a cute <strike>couple</strike> triple?</h3>
+<h3>Know three friends who should go on a date?</h3>
+<h3>Which of your friends would make a cute triple?</h3>
 <p>Use nChooseThree to anonymously make match suggestions, and to get matched up
 by your friends!</p>
 <p><strong>If not all three matchees accept, none of the matchees or the
