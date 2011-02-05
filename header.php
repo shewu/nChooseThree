@@ -5,6 +5,7 @@
 <style type="text/css">
 @import '/nChooseThree/static/css/reset.css';
 @import '/nChooseThree/static/css/main.css';
+@import '/nChooseThree/static/css/forms.css';
 </style>
 </head>
 <body>
