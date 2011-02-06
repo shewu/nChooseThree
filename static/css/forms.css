@@ -128,7 +128,11 @@ form.inline p { margin-bottom:0; }
 	background: #f5f5f5;
 }
 
-.matchmaker .form-row div,span {
+.matchmaker .form-row div {
+	border-bottom: 1px solid #ccc;
+}
+
+.matchmaker .form-row span {
 	border-bottom: 1px solid #ccc;
 }
 
