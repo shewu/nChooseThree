@@ -94,6 +94,18 @@ form.inline p { margin-bottom:0; }
 	width: 140px;
 }
 
+.stylized textarea {
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:200px;
+	max-width: 200px;
+	min-width: 200px;
+	height:100px;
+	margin:2px 0 20px 10px;
+}
+
 .stylized button {
 	margin-left: 150px;
 }
