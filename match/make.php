@@ -9,19 +9,13 @@ include("../header.php");
 <section class="grid_9">
 <div class="matchmaker">
 <form method="post" class="matchmake-form">
-<div class="heading">Make a match:</div>
-<div class="text-wrapper">
+<div class="heading-wrapper"><div class="heading">Make a match:</div></div>
 <input type="text" id="target_a_email" name="target_a_email" class="text
 ui-autocomplete-input" />
-</div>
-<div class="text-wrapper">
 <input type="text" id="target_b_email" name="target_b_email" class="text
 ui-autocomplete-input" />
-</div>
-<div class="text-wrapper">
 <input type="text" id="target_c_email" name="target_c_email" class="text
 ui-autocomplete-input" />
-</div>
 <button type="submit">Match</button>
 </form>
 <div class="columnclear"></div>

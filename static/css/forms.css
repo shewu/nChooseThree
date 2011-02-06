@@ -113,11 +113,13 @@ form.inline p { margin-bottom:0; }
 /* matchmaker */
 
 .matchmaker {
+	display: table;
+	height: 37px;
+	#position: relative;
+	overflow: hidden;
 	margin-bottom: 1.4em;
 	width: 100%;
-}
-
-.matchmaker .heading {
+	
 	font-weight: bold;
 	font-style: italic;
 	color: #222;
@@ -126,11 +128,25 @@ form.inline p { margin-bottom:0; }
 	padding: 4px 10px;
 }
 
+.matchmaker .heading-wrapper {
+	float: left;
+	#position: absolute;
+	#top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.matchmaker .heading-wrapper .heading {
+	#position: relative;
+	#top: -50%;
+}
+
 .matchmaker .text-wrapper {
 	color: #222;
 	background: #f5f5f5;
 	border-bottom: 1px solid #ccc;
 	padding: 4px 10px;
+	display: inline-block;
 }
 
 .matchmaker input.text {
