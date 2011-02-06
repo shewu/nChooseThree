@@ -18,11 +18,14 @@ include("../header.php");
 <strong>Suggested matches</strong> for you are shown below.
 </div>
 <table>
+<thead>
 <tr>
 <th scope="col">Matchmaker</th>
 <th scope="colgroup" colspan="2">Suggested Match</th>
 <th scope="col">Reply</th>
 </tr>
+</thead>
+<tbody>
 <!-- matches -->
 <?php
 require("../mysql_connect.php");
@@ -94,6 +97,7 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 	}
 }
 ?>
+</tbody>
 </table>
 <div class="notice">
 <strong>You can have up to 10 crushes at a time.</strong> A crush can be removed

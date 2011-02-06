@@ -179,6 +179,11 @@ footer {
 	color: #fff;
 }
 
+table {
+	margin-bottom: 1.4em;
+	width: 100%;
+}
+
 th {
 	font-weight: bold;
 	font-style: italic;
