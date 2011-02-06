@@ -113,9 +113,8 @@ form.inline p { margin-bottom:0; }
 /* matchmaker */
 
 .matchmaker {
+	position: relative;
 	display: table;
-	height: 37px;
-	#position: relative;
 	overflow: hidden;
 	margin-bottom: 1.4em;
 	width: 100%;
@@ -129,16 +128,17 @@ form.inline p { margin-bottom:0; }
 }
 
 .matchmaker .heading-wrapper {
-	float: left;
-	#position: absolute;
-	#top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	height: 1em;
+}
+
+.matchmaker button {
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .matchmaker .heading-wrapper .heading {
-	#position: relative;
-	#top: -50%;
 }
 
 .matchmaker .text-wrapper {
@@ -150,8 +150,8 @@ form.inline p { margin-bottom:0; }
 }
 
 .matchmaker input.text {
-	float: left;
 	width: 243px;
+	display: table-cell;
 }
 
 .matchmaker .columnclear {
