@@ -32,7 +32,7 @@ function suggest_triple($mail1, $mail2, $mail3) {
 		mail($mail2, $mail_title2, $mail_text2, "From: info@mooo.com");
 		mail($mail3, $mail_title3, $mail_text3, "From: info@mooo.com");
 
-		$query = "INSERT INTO Matches VALUES('$mail1','$mail2','$mail3','$auth_name',0,".time().")";
+		$query = "INSERT INTO Matches VALUES(0,'$mail1','$mail2','$mail3','$auth_name',0,".time().")";
 		mysql_query($query);
 	}
 }
