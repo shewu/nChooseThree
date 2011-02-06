@@ -38,9 +38,12 @@ include("header.php");
 <div class="form-element">
 <label for="password">Password:</label>
 <input type="password" id="password" name="password" class="text" />
+</div>
+<div class="form-element">
 <label for="password2">Reenter password:</label>
 <input type="password" id="password2" name="password" class="text" />
 </div>
+<button type="submit">Submit</button>
 </form>
 </div>
 
