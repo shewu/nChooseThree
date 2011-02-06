@@ -17,7 +17,7 @@ if(isset($_POST["password"])) {
 		header("Location: register.php?a=$hash");
 		die();
 	}
-	$query = mysql_real_escape_string("INSERT INTO Accounts VALUES(0,'$email','".sha1($email . $pass . "55555")."'");
+	$query = "INSERT INTO Accounts VALUES(0,'$email','".sha1($email . $pass . "55555")."')";
 	mysql_query($query);
 	$query = "DELETE FROM Invites WHERE Hash='$hash'";
 	mysql_query($query);
