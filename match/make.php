@@ -18,7 +18,7 @@ include("../header.php");
 <li><a href="/nChooseThree/match/make">Matchmaker</a></li>
 </ul>
 </section>
-<section class="grid_9">
+<section class="column grid_9">
 <div class="matchmaker">
 <div class="heading-wrapper"><div class="heading">Make a match:</div></div>
 <form action="make.php" method="post" class="matchmake-form">
