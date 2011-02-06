@@ -19,6 +19,7 @@ if(isset($_POST["password"])) {
 
 	$session_hash = sha1($email . $pass . time());
 	$query = "INSERT INTO Sessions VALUES('$session_hash','$email')";
+	mysql_query($query);
 	
 	setcookie("session_id",$session_hash);
 } else {
@@ -26,10 +27,14 @@ $hash = $_GET["a"];
 $query = "SELECT * FROM Invites WHERE Hash='$hash'";
 $res = mysql_query($query);
 if(mysql_num_rows($res) != 0) {
+
+include("header.php");
 ?>
 <!-- Password form -->
 
 <?php
+include("footer.php");
+
 } else {
 	header("Location: index.php");
 	die();

@@ -1,4 +1,10 @@
 <?php
+require_once("auth.php");
+if($auth_name) {
+	header("Location: match/make.php");
+	die();
+}
+
 include("header.php");
 ?>
 <article>
