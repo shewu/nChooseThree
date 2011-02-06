@@ -16,8 +16,8 @@ include("../header.php");
 </aside>
 <section id="matchmake-nav" class="grid_3">
 <ul>
-<li><a href="/nChooseThree/match/me">Match Me</a></li>
-<li><a href="/nChooseThree/match/make">Matchmaker</a></li>
+<li><a href="/nChooseThree/match/me.php">Match Me</a></li>
+<li><a href="/nChooseThree/match/make.php">Matchmaker</a></li>
 </ul>
 </section>
 <section class="grid_9">
