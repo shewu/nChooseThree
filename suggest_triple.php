@@ -16,16 +16,24 @@ nChooseThree";
 
 $suggest_title = "A friend thinks %s, %s, and you would make a great match!";
 
+require("auth.php");
+require("verify_email.php");
+
 function suggest_triple($mail1, $mail2, $mail3) {
-	global $suggest_text, $suggest_title;
-	$mail_text1 = sprintf($suggest_text, $mail1, $mail2, $mail3, "foo", "bar");
-	$mail_title1 = sprintf($suggest_title, $mail2, $mail3);
-	$mail_text2 = sprintf($suggest_text, $mail2, $mail3, $mail1, "foo", "bar");
-	$mail_title2 = sprintf($suggest_title, $mail3, $mail1);
-	$mail_text3 = sprintf($suggest_text, $mail3, $mail1, $mail2, "foo", "bar");
-	$mail_title3 = sprintf($suggest_title, $mail1, $mail2);
-	mail($mail1, $mail_title1, $mail_text1, "From: info@mooo.com");
-	mail($mail2, $mail_title2, $mail_text2, "From: info@mooo.com");
-	mail($mail3, $mail_title3, $mail_text3, "From: info@mooo.com");
+	global $suggest_text, $suggest_title,$auth_name;
+	if($auth_name and is_email_valid($mail1) and is_email_valid($mail2) and is_email_valid($mail3)) {
+		$mail_text1 = sprintf($suggest_text, $mail1, $mail2, $mail3, "foo", "bar");
+		$mail_title1 = sprintf($suggest_title, $mail2, $mail3);
+		$mail_text2 = sprintf($suggest_text, $mail2, $mail3, $mail1, "foo", "bar");
+		$mail_title2 = sprintf($suggest_title, $mail3, $mail1);
+		$mail_text3 = sprintf($suggest_text, $mail3, $mail1, $mail2, "foo", "bar");
+		$mail_title3 = sprintf($suggest_title, $mail1, $mail2);
+		mail($mail1, $mail_title1, $mail_text1, "From: info@mooo.com");
+		mail($mail2, $mail_title2, $mail_text2, "From: info@mooo.com");
+		mail($mail3, $mail_title3, $mail_text3, "From: info@mooo.com");
+
+		$query = "INSERT INTO Matches VALUES('$mail1','$mail2','$mail3','$auth_name',0,".time().")";
+		mysql_query($query);
+	}
 }
 ?>
