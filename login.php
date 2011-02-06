@@ -5,7 +5,7 @@ require_once("verify_email.php");
 $email = $_POST["email"];
 $pass = $_POST["password"];
 
-if(!is_valid_email($email)) {
+if(!is_email_valid($email)) {
 	header("Location: index.php");
 	die();
 }
