@@ -1,6 +1,13 @@
-article, header, nav, footer {
+body {
+	margin: 0 auto;
+	overflow: hidden;
 	width: 960px;
+}
+
+/*
+article, header, nav, footer {
 	margin: 0 auto;
 	overflow: hidden;
 }
+*/
 
