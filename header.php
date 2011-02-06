@@ -11,6 +11,12 @@
 </head>
 <body>
 <nav>
+<?php
+require_once("auth.php");
+if($auth_name) {
+	echo $auth_name . ' | <a href="/nChooseThree/logout.php">Log Out</a> | ';
+}
+?>
 	<a href="/nChooseThree/about.php">About</a> | <a href="/nChooseThree/about.php#feedback">Feedback</a> | <a
 href="/nChooseThree/index.php">Home</a>
 </nav>
