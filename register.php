@@ -31,6 +31,18 @@ if(mysql_num_rows($res) != 0) {
 include("header.php");
 ?>
 <!-- Password form -->
+<div class="stylized myform">
+<form action="register.php" method="post">
+<h1>Choose your password</h1>
+<p>Select a password between 6 and 40 characters.</p>
+<div class="form-element">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" class="text" />
+<label for="password2">Reenter password:</label>
+<input type="password" id="password2" name="password" class="text" />
+</div>
+</form>
+</div>
 
 <?php
 include("footer.php");
