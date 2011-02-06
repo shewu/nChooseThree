@@ -185,6 +185,6 @@ form.inline p { margin-bottom:0; }
 	border-bottom: 1px dotted #EEEEEE;
 }
 
-.success.entry {
+.success .entry {
 	border-bottom: 1px dotted #EEEEEE;
 }
