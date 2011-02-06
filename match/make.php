@@ -6,6 +6,12 @@ include("../header.php");
 <article>
 <aside>
 </aside>
+<section id="matchmake-nav" class="grid_3">
+<ul>
+<li><a href="/nChooseThree/match/me">Match Me</a></li>
+<li><a href="/nChooseThree/match/make">Matchmaker</a></li>
+</ul>
+</section>
 <section class="grid_9">
 <div class="matchmaker">
 <div class="heading-wrapper"><div class="heading">Make a match:</div></div>
