@@ -39,7 +39,7 @@ revealed when all three A, B, and C accept the match.</p>
 <div class="stylized myform">
 <form action="login.php" method="post" id="login_form">
 <h1>Login</h1>
-<p>Welcome back! (<a href="/resetpass/">Forgot your password?</a>)</p>
+<p>Welcome back! ( <a href="/resetpass/">Forgot your password?</a> )</p>
 <div class="form-element">
 <label for="email">Email</label>
 <input type="text" id="email" name="email" class="text" />
