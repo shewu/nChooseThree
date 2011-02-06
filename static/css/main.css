@@ -179,3 +179,43 @@ footer {
 	color: #fff;
 }
 
+th {
+	font-weight: bold;
+	font-style: italic;
+}
+
+thead th {
+	color: #222;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+}
+
+th, td, caption {
+	outline: none;
+	padding: 4px 10px;
+}
+
+td a {
+	font-weight: bold;
+}
+
+td a:hover {
+	text-decoration: underline;
+}
+
+td {
+	border-bottom: 1px dotted #eee;
+}
+
+tr .success {
+	background: #E6EFC2;
+}
+
+tr .waiting {
+	background: #FFF6BF;
+}
+
+tr:hover, tr:nth-child(even):hover {
+	background: #f5f5f5;
+}
+
