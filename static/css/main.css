@@ -98,6 +98,7 @@ header a, header a:visited, header a:active, a:hover {
 }
 
 footer {
+	margin-top: 24px;
 	border-top: 2px dotted #CCC;
 	text-align: center;
 	font-weight: lighter;
