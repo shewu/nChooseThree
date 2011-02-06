@@ -145,13 +145,12 @@ form.inline p { margin-bottom:0; }
 .matchmaker .text-wrapper {
 	color: #222;
 	background: #f5f5f5;
-	border-bottom: 1px solid #ccc;
 	padding: 4px 10px;
 	display: inline-block;
 }
 
 .matchmaker input.text {
-	width: 243px;
+	width: 150px;
 	display: table-cell;
 }
 
