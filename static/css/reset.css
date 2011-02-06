@@ -9,17 +9,17 @@ html, body, div, span, object, iframe,
 	margin: 0;
 	padding: 0;
 	border: 0;
-		font-weight: inherit;
-		font-style: inherit;
-		font-size: 100%;
-		font-family: inherit;
-		vertical-align: baseline;
-	}
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
 
 article, aside, dialog, figure, footer, header,
 	hgroup, nav, section {
-display:block;
-	}
+	display:block;
+}
 
 body {
 	line-height: 1.5;
@@ -36,3 +36,4 @@ blockquote, q { quotes: "" ""; }
 
 /* Remove annoying border on linked images. */
 a img { border: none; }
+
