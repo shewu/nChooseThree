@@ -57,7 +57,7 @@ h5 {
 }
 
 h6 {
-	font-size; 1em;
+	font-size: 1em;
 	font-weight: bold;
 }
 
@@ -212,11 +212,11 @@ td {
 	border-bottom: 1px dotted #eee;
 }
 
-tr .success {
+tr.success {
 	background: #E6EFC2;
 }
 
-tr .waiting {
+tr.waiting {
 	background: #FFF6BF;
 }
 
