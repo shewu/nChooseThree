@@ -1,13 +1,9 @@
-body {
-	margin: 0 auto;
-	overflow: hidden;
-	width: 960px;
-}
-
-/*
 article, header, nav, footer {
 	margin: 0 auto;
 	overflow: hidden;
 }
-*/
 
+.full-wrapper {
+	width: 960px;
+	margin: 0 auto;
+}

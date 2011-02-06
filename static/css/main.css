@@ -70,6 +70,9 @@ p {
 }
 
 nav {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 4px;
 	text-align: right;
 	font-weight: lighter;
 }
@@ -87,16 +90,23 @@ header {
 	border-bottom: 2px dotted #CCC;
 	margin-bottom: 24px;
 	background: url('../img/logo.png') no-repeat;
+	padding-top: 6px;
 	/*
-	padding: 2px 0 8px 32px;
-	*/
 	text-shadow: #999 0px 1px 1px;
+	*/
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2em;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 24px;
 }
 
 header a {
 	padding: 0 0 0 32px;
+}
+
+header div {
+	margin-bottom: 4px;
 }
 
 header a, header a:visited, header a:active, a:hover {
@@ -104,6 +114,8 @@ header a, header a:visited, header a:active, a:hover {
 }
 
 footer {
+	margin-left: 10px;
+	margin-right: 10px;
 	margin-top: 24px;
 	border-top: 2px dotted #CCC;
 	text-align: center;

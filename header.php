@@ -13,6 +13,7 @@
 </style>
 </head>
 <body>
+<div class="full-wrapper">
 <nav>
 <?php
 require_once("auth.php");
@@ -24,6 +25,8 @@ if($auth_name) {
 href="/nChooseThree/index.php">Home</a>
 </nav>
 <header>
+	<div>
 	<a href="/nChooseThree/index.php">nChooseThree</a>
+	</div>
 </header>
 
