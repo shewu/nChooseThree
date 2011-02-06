@@ -156,7 +156,7 @@ footer {
 	border-bottom: 1px dotted #eee;
 }
 
-#matchmake-nav li a:link, #nav a:visited {
+#matchmake-nav li a:link, #matchmake-nav a:visited {
 	display: block;
 	padding: 6px;
 	color: #333;
