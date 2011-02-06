@@ -12,9 +12,14 @@ if(isset($_POST["password"])) {
 	$email = mysql_result($res,0,"Email");
 
 	$pass = $_POST["password"];
+	$pass2 = $_POST["password2"];
+	if(strlen($pass) < 6 or strlen($pass) > 40 or $pass != $pass2) {
+		header("Location: register.php?a=$hash");
+		die();
+	}
 	$query = mysql_real_escape_string("INSERT INTO Accounts VALUES(0,'$email','".sha1($email . $pass . "55555")."'");
 	mysql_query($query);
-	$query = "DELETE * FROM Invites WHERE Hash='$hash'";
+	$query = "DELETE FROM Invites WHERE Hash='$hash'";
 	mysql_query($query);
 
 	$session_hash = sha1($email . $pass . time());
@@ -22,6 +27,7 @@ if(isset($_POST["password"])) {
 	mysql_query($query);
 	
 	setcookie("session_id",$session_hash);
+	header("Location: index.php");
 } else {
 $hash = $_GET["a"];
 $query = "SELECT * FROM Invites WHERE Hash='$hash'";
@@ -33,6 +39,7 @@ include("header.php");
 <!-- Password form -->
 <div class="stylized myform">
 <form action="register.php" method="post">
+<input type="hidden" name="a" value="<?php echo $hash; ?>" />
 <h1>Choose your password</h1>
 <p>Select a password between 6 and 40 characters.</p>
 <div class="form-element">
@@ -41,7 +48,7 @@ include("header.php");
 </div>
 <div class="form-element">
 <label for="password2">Reenter password:</label>
-<input type="password" id="password2" name="password" class="text" />
+<input type="password" id="password2" name="password2" class="text" />
 </div>
 <button type="submit">Submit</button>
 </form>
