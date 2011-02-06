@@ -110,3 +110,35 @@ form.inline p { margin-bottom:0; }
 	margin-left: 150px;
 }
 
+/* matchmaker */
+
+.matchmaker {
+	margin-bottom: 1.4em;
+	width: 100%;
+}
+
+.matchmaker .heading {
+	font-weight: bold;
+	font-style: italic;
+	color: #222;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	padding: 4px 10px;
+}
+
+.matchmaker .text-wrapper {
+	color: #222;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	padding: 4px 10px;
+}
+
+.matchmaker input.text {
+	float: left;
+	width: 243px;
+}
+
+.matchmaker .columnclear {
+	clear: both;
+}
+
