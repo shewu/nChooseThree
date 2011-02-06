@@ -91,6 +91,7 @@ header {
 	text-shadow: #999 0px 1px 1px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 2em;
+	width: 960px;
 }
 
 header a, header a:visited, header a:active, a:hover {
