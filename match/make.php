@@ -1,6 +1,14 @@
 <?php
 require("../auth.php");
 if($auth_name) {
+
+if(isset($_POST["target_a_email"])) {
+	require("../suggest_triple.php");
+	suggest_triple($_POST["target_a_email"],$_POST["target_b_email"],$_POST["target_c_email"]);
+	header("Location: make.php");
+	die();
+}
+
 include("../header.php");
 ?>
 <article>
@@ -9,7 +17,7 @@ include("../header.php");
 <section class="grid_9">
 <div class="matchmaker">
 <div class="heading-wrapper"><div class="heading">Make a match:</div></div>
-<form method="post" class="matchmake-form">
+<form action="make.php" method="post" class="matchmake-form">
 <span class="text-wrapper">
 <input type="text" id="target_a_email" name="target_a_email" class="text
 ui-autocomplete-input" />
