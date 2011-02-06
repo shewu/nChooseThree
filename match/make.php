@@ -8,8 +8,8 @@ include("../header.php");
 </aside>
 <section class="grid_9">
 <div class="matchmaker">
-<form method="post" class="matchmake-form">
 <div class="heading-wrapper"><div class="heading">Make a match:</div></div>
+<form method="post" class="matchmake-form">
 <input type="text" id="target_a_email" name="target_a_email" class="text
 ui-autocomplete-input" />
 <input type="text" id="target_b_email" name="target_b_email" class="text
