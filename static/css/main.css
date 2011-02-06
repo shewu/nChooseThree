@@ -113,6 +113,10 @@ footer {
 	width: 460px;
 }
 
+.grid_9 {
+	width: 700px;
+}
+
 .error, .notice, .success {
 	border: 1px solid #DDD;
 	margin-bottom: 1em;

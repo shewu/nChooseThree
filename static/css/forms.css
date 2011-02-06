@@ -131,6 +131,7 @@ form.inline p { margin-bottom:0; }
 	display: table-cell;
 	vertical-align: middle;
 	height: 1em;
+	padding: 0 10px;
 }
 
 .matchmaker button {
@@ -152,6 +153,7 @@ form.inline p { margin-bottom:0; }
 .matchmaker input.text {
 	width: 243px;
 	display: table-cell;
+	padding: 4px 10px;
 }
 
 .matchmaker .columnclear {
