@@ -11,10 +11,10 @@
 </head>
 <body>
 <nav>
-	<a href="about.php">About</a> | <a href="about.php#feedback">Feedback</a> | <a
-href="index.php">Home</a>
+	<a href="/nChooseThree/about.php">About</a> | <a href="/nChooseThree/about.php#feedback">Feedback</a> | <a
+href="/nChooseThree/index.php">Home</a>
 </nav>
 <header>
-	<a href="index.php">nChooseThree</a>
+	<a href="/nChooseThree/index.php">nChooseThree</a>
 </header>
 
