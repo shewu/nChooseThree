@@ -12,9 +12,7 @@ if(isset($_POST["target_a_email"])) {
 include("../header.php");
 ?>
 <article>
-<aside>
-</aside>
-<section id="matchmake-nav" class="grid_3">
+<section id="matchmake-nav" class="column grid_3">
 <ul>
 <li><a href="/nChooseThree/match/me.php">Match Me</a></li>
 <li><a href="/nChooseThree/match/make.php">Matchmaker</a></li>

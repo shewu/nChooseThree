@@ -109,6 +109,10 @@ footer {
 	overflow: hidden;
 }
 
+.grid_3 {
+	width: 220px;
+}
+
 .grid_6 {
 	width: 460px;
 }
