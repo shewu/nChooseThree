@@ -56,7 +56,7 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 		} else if(($status & 8) == 0) {
 			echo "<td><strong><a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a></strong> or <strong><a href=\"/nChooseThree/match/ignore.php?m=$id\">Ignore</a></strong></td>\n";
 		} else {
-			echo "<td>Ignored (<a href=\"/nchoosethree/match/accept.php?m=$id\">Accept</a>)";
+			echo "<td>Ignored (<a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a>)";
 		}
 	} else if($auth_name == $email2) {
 		if(($status & 7) == 7) {
@@ -77,7 +77,7 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 		} else if(($status & 16) == 0) {
 			echo "<td><strong><a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a></strong> or <strong><a href=\"/nChooseThree/match/ignore.php?m=$id\">Ignore</a></strong></td>\n";
 		} else {
-			echo "<td>Ignored (<a href=\"/nchoosethree/match/accept.php?m=$id\">Accept</a>)";
+			echo "<td>Ignored (<a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a>)";
 		}
 	} else if($auth_name == $email3) {
 		if(($status & 7) == 7) {
@@ -98,7 +98,7 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 		} else if(($status & 32) == 0) {
 			echo "<td><strong><a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a></strong> or <strong><a href=\"/nChooseThree/match/ignore.php?m=$id\">Ignore</a></strong></td>\n";
 		} else {
-			echo "<td>Ignored (<a href=\"/nchoosethree/match/accept.php?m=$id\">Accept</a>)";
+			echo "<td>Ignored (<a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a>)";
 		}
 	}
 }
