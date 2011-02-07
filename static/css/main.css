@@ -89,7 +89,8 @@ header {
 	border-bottom: 2px dotted #CCC;
 	margin-bottom: 24px;
 	background: url('../img/logo.png') no-repeat;
-	padding-top: 6px;
+	padding-top: 5px;
+	padding-bottom: 1px;
 	/*
 	text-shadow: #999 0px 1px 1px;
 	*/
