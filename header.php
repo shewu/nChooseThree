@@ -52,15 +52,15 @@ _gaq.push(['_trackPageview']);
 <?php
 require_once("auth.php");
 if($auth_name) {
-	echo $auth_name . ' | <a href="/nChooseThree/logout.php">Log Out</a> | ';
+	echo $auth_name . ' | <a href="/logout.php">Log Out</a> | ';
 }
 ?>
-	<a href="/nChooseThree/about.php">About</a> | <a href="/nChooseThree/about.php#feedback">Feedback</a> | <a
-href="/nChooseThree/index.php">Home</a>
+	<a href="/about.php">About</a> | <a href="/about.php#feedback">Feedback</a> | <a
+href="/index.php">Home</a>
 </nav>
 <header>
 	<div>
-	<a href="/nChooseThree/index.php">nChooseThree</a>
+	<a href="/index.php">nChooseThree</a>
 	</div>
 </header>
 

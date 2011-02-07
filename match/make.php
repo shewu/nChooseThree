@@ -4,8 +4,8 @@ if($auth_name) {
 
 if(isset($_POST["target_a_email"])) {
 	require("../suggest_triple.php");
-	suggest_triple($_POST["target_a_email"],$_POST["target_b_email"],$_POST["target_c_email"]);
 	header("Location: make.php");
+	suggest_triple($_POST["target_a_email"],$_POST["target_b_email"],$_POST["target_c_email"]);
 	die();
 }
 
@@ -14,8 +14,8 @@ include("../header.php");
 <article>
 <section id="matchmake-nav" class="column grid_3">
 <ul>
-<li><a href="/nChooseThree/match/me.php">Match Me</a></li>
-<li class="nav-highlight"><a href="/nChooseThree/match/make.php">Matchmaker</a></li>
+<li><a href="/match/me.php">Match Me</a></li>
+<li class="nav-highlight"><a href="/match/make.php">Matchmaker</a></li>
 </ul>
 </section>
 <section class="column grid_9">

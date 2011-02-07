@@ -15,7 +15,8 @@ know each other best. Why not suggest a date among three of your friends?</p>
 <br />
 Cheers,<br />
 <br />
-nChooseThree
+Brian and Sherry <br />
+(MIT '14)
 </p>
 </div>
 </section>
