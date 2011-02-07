@@ -69,6 +69,10 @@ p {
 	margin: 0 0 1.5em;
 }
 
+em {
+	font-style: italic;
+}
+
 nav {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -150,6 +154,10 @@ footer {
 	background: #FFF6BF;
 	border-color: #FFD324;
 	color: #514721;
+}
+
+.faded {
+	color: #999;
 }
 
 #twocolumnfooter {
