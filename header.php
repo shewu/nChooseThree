@@ -27,7 +27,6 @@ if(!strpos(strtolower($url),"nchoosethree.com")) {
 @import '/nChooseThree/static/css/grid.css';
 @import '/nChooseThree/static/css/main.css';
 @import '/nChooseThree/static/css/forms.css';
-@import '/nChooseThree/static/css/typography.css';
 </style>
 <script type="text/javascript">
 
