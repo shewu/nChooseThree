@@ -20,8 +20,8 @@ revealed when all three A, B, and C accept the match.</p>
 <p><a href="about.php">Read more about nChooseThree</a></p>
 </div>
 <div class="notice">
-<h3>Your mom</h3>
-<p>Steve Jobs is god</p>
+<h3>Launch!</h3>
+<p>nChooseThree is live!</p>
 </div>
 </section>
 <section class="column grid_6">

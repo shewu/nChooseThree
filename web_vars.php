@@ -1,4 +1,4 @@
 <?php
-$base_url = "http://pecker.mooo.com/nChooseThree/";
-$from_addr = "info@mooo.com";
+$base_url = "http://www.nchoosethree.com/";
+$from_addr = "info@nchoosethree.com";
 ?>
