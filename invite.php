@@ -20,8 +20,19 @@ Privacy and security are our top priorities - you always remain anonymous unless
 Cheers,
 nChooseThree";
 
+function is_registered($email) {
+	$query = "SELECT * FROM Accounts WHERE Email='$email'";
+	$res = mysql_query($query);
+	return mysql_num_rows($res) > 0;
+}
+
 function invite($mail) {
 	global $from_addr, $invite_text_format, $base_url;
+	
+	$mail = strtolower($mail);
+	if(!is_registered($mail)) {
+		return;
+	}
 
 	$hash = sha1($mail . time());
 
@@ -36,7 +47,7 @@ function invite($mail) {
 	mysql_query($query);
 }
 
-if(isset($_POST["email"]) and is_email_valid($_POST["email"])) {
+if(isset($_POST["email"]) and is_email_valid($_POST["email"]) and !is_registered(strtolower($_POST["email"]))) {
 	invite($_POST["email"]);
 
 include("header.php");
