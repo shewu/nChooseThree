@@ -41,7 +41,7 @@ ui-autocomplete-input" />
 </div>
 <?php
 require("../mysql_connect.php");
-$query = "SELECT * FROM Matches WHERE Maker='$auth_name'";
+$query = "SELECT * FROM Matches WHERE Maker='$auth_name' ORDER BY Timestamp DESC";
 $res = mysql_query($query);
 for($i = 0; $i < mysql_num_rows($res); $i++) {
 	if(mysql_result($res,$i,"Status") == 7) {

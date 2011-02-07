@@ -29,7 +29,7 @@ include("../header.php");
 <!-- matches -->
 <?php
 require("../mysql_connect.php");
-$query = "SELECT * FROM Matches WHERE Email1='$auth_name' OR Email2='$auth_name' OR Email3='$auth_name'";
+$query = "SELECT * FROM Matches WHERE Email1='$auth_name' OR Email2='$auth_name' OR Email3='$auth_name' ORDER BY Timestamp DESC";
 $res = mysql_query($query);
 for($i = 0; $i < mysql_num_rows($res); $i++) {
 	$id = mysql_result($res,$i,"ID");
@@ -38,10 +38,10 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 	$email2 = mysql_result($res,$i,"Email2");
 	$email3 = mysql_result($res,$i,"Email3");
 	if($auth_name == $email1) {
-		if($status == 7) {
+		if(($status & 7) == 7) {
 			echo "<tr class=\"success\">\n";
 			echo "<td><em>" . mysql_result($res,$i,"Maker") . "</em></td>\n";
-		} else if(($status & 1) != 1) {
+		} else if(($status & 9) == 0) {
 			echo "<tr class=\"waiting\">\n";
 			echo "<td><em><span class=\"faded\">Revealed on accept</span></em></td>\n";
 		} else {
@@ -49,18 +49,20 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 			echo "<td><em><span class=\"faded\">Revealed on accept</span></em></td>\n";
 		}
 		echo "<td>$email2</td>\n<td>$email3</td>\n";
-		if($status == 7) {
+		if(($status & 7) == 7) {
 			echo "<td><strong>You've all accepted!</strong> How about a date? ;-)</td>\n";
 		} else if(($status & 1) == 1) {
 			echo "<td><em>Waiting</em></td>\n";	
-		} else {
+		} else if(($status & 8) == 0) {
 			echo "<td><strong><a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a></strong> or <strong><a href=\"/nChooseThree/match/ignore.php?m=$id\">Ignore</a></strong></td>\n";
+		} else {
+			echo "<td>Ignored (<a href=\"/nchoosethree/match/accept.php?m=$id\">Accept</a>)";
 		}
 	} else if($auth_name == $email2) {
-		if($status == 7) {
+		if(($status & 7) == 7) {
 			echo "<tr class=\"success\">\n";
 			echo "<td><em>" . mysql_result($res,$i,"Maker") . "</em></td>\n";
-		} else if(($status & 2) != 2) {
+		} else if(($status & 18) == 0) {
 			echo "<tr class=\"waiting\">\n";
 			echo "<td><em><span class=\"faded\">Revealed on accept</span></em></td>\n";
 		} else {
@@ -72,14 +74,16 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 			echo "<td><strong>You've all accepted!</strong> How about a date? ;-)</td>\n";
 		} else if(($status & 2) == 2) {
 			echo "<td><em>Waiting</em></td>\n";	
-		} else {
+		} else if(($status & 16) == 0) {
 			echo "<td><strong><a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a></strong> or <strong><a href=\"/nChooseThree/match/ignore.php?m=$id\">Ignore</a></strong></td>\n";
+		} else {
+			echo "<td>Ignored (<a href=\"/nchoosethree/match/accept.php?m=$id\">Accept</a>)";
 		}
 	} else if($auth_name == $email3) {
-		if($status == 7) {
+		if(($status & 7) == 7) {
 			echo "<tr class=\"success\">\n";
 			echo "<td><em>" . mysql_result($res,$i,"Maker") . "</em></td>\n";
-		} else if(($status & 4) != 4) {
+		} else if(($status & 36) == 0) {
 			echo "<tr class=\"waiting\">\n";
 			echo "<td><em><span class=\"faded\">Revealed on accept</span></em></td>\n";
 		} else {
@@ -87,23 +91,26 @@ for($i = 0; $i < mysql_num_rows($res); $i++) {
 			echo "<td><em><span class=\"faded\">Revealed on accept</span></em></td>\n";
 		}
 		echo "<td>$email1</td>\n<td>$email2</td>\n";
-		if($status == 7) {
+		if(($status & 7) == 7) {
 			echo "<td><strong>You've all accepted!</strong> How about a date? ;-)</td>\n";
 		} else if(($status & 4) == 4) {
 			echo "<td><em>Waiting</em></td>\n";	
-		} else {
+		} else if(($status & 32) == 0) {
 			echo "<td><strong><a href=\"/nChooseThree/match/accept.php?m=$id\">Accept</a></strong> or <strong><a href=\"/nChooseThree/match/ignore.php?m=$id\">Ignore</a></strong></td>\n";
+		} else {
+			echo "<td>Ignored (<a href=\"/nchoosethree/match/accept.php?m=$id\">Accept</a>)";
 		}
 	}
 }
 ?>
 </tbody>
 </table>
+<!--
 <div class="notice">
 <strong>You can have up to 10 crushes at a time.</strong> A crush can be removed
 after a week has passed.
 </div>
-<!-- crushes -->
+-->
 <p>The matchmaker <strong>does not receive any information</strong> unless all
 three matchees accept the match.</p>
 <p>The matchmaker's identity is revealed when all three A, B, and C accept the
