@@ -8,6 +8,8 @@ include("header.php");
 <h3>Which of your friends would make a cute triple?</h3>
 <p>Triples often meet through mutual friends. After all, your friends and you
 know each other best. Why not suggest a date among three of your friends?</p>
+<p>nChooseThree lets you anonymously suggest a match between two of your
+friends; you remain anonymous until they both accept the match!</p>
 <p>Privacy and security are our top priorities - no information about romantic intent is revealed to anyone unless all three parties accept the match. Additionally, this service is limited to members of the MIT community.</p>
 <p>Only when the match is accepted by all three parties is the identity of the matchmaker divulged and the success of the match reported to the matchmaker. If only one or two of the matchees accept the match, the other matchee or matchees and the matchmaker DO NOT learn this information.</p>
 <p>We hope you enjoy using nChooseThree!</p>
