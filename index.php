@@ -17,12 +17,12 @@ by your friends!</p>
 <p><strong>If not all three matchees accept, none of the matchees or the
 matchmaker learn of any other response.</strong> The matchmaker's identity is
 revealed when all three A, B, and C accept the match.</p>
-<p><a href="about.php">Read more about nChooseThree</a></p>
 </div>
 <div class="notice">
 <h3>Launch!</h3>
 <p>nChooseThree is live!</p>
 </div>
+<p><a href="about.php">Read more about nChooseThree</a></p>
 </section>
 <section class="column grid_6">
 <div class="stylized myform">
